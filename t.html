@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="style.css">
+    <title>goku</title>
+</head>
+<body>
+    
+    <div id="pr">  
+        <form action="insert.php" method="post">
+            <h3>Insertar marcas</h3>
+            Nombre:
+            <input type="text" name="nombre" required  placeholder="nombre de marca"/>
+            <br><br>
+            Descripcion:
+            <input type="text" name="descripcion" required  placeholder="nombre del celu"/>
+            <br><br>
+            numero: 
+            <input type="number" name="idmarca" required placeholder="el numero"/>
+            <br><br>
+            <input type="submit" value="registrar">
+            <br><br>
+        </form>
+<br><br>
+
+<form action="consultar.php" method="post">
+    <h1>Cosultas</h1>
+    <label for="consulta"></label> <br>
+    <input type="text" name="descripcion" 
+    required placeholder="nombre del celu"/><br>
+    
+     <input type="submit" value="Consultar">
+
+</form>
+    <form action="actualizar.php" method="post">
+        <h1>Actualizar</h1>
+        <label for="actualizar"></label> <br>
+        <input type="text" name="descripcion" required placeholder="nombre del celu"/> <br>
+        <input type="submit" value="Atualizar">
+    </form>
+
+    
+    <form action="eliminar.php" method="post">
+    <h1>Eliminar</h1>
+        <label for="eliminar"></label>
+        <input type="text" name="descripcion" required placeholder="nombre del celu"/> <br> 
+        <input type="submit" value="Eliminar">
+    </form>
+
+    </div>
+
+</body>
+</html>
